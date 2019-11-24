@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfxgoogledrive.controllers.HomeController">
+   <children>
+      <BorderPane prefHeight="650.0" prefWidth="1000.0">
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <top>
+                  <Pane prefHeight="250.0" prefWidth="750.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="74.0" layoutY="14.0" text="My Drive" textFill="#8d8d8d">
+                           <font>
+                              <Font size="38.0" />
+                           </font>
+                        </Label>
+                        <MaterialDesignIconView fill="#8a8585" glyphName="FOLDER_MULTIPLE" layoutX="14.0" layoutY="56.0" size="40" />
+                        <Label layoutX="14.0" layoutY="85.0" text="QUICK ACCESS" textFill="#8d8d8d">
+                           <font>
+                              <Font name="Segoe UI Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutY="110.0" prefHeight="140.0" prefWidth="750.0" spacing="15.0" style="-fx-background-color: white;">
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                           <children>
+                              <Pane prefHeight="94.0" prefWidth="180.0" style="-fx-background-color: #295198; -fx-background-radius: 5 40 5 5; -fx-border-radius: 40 5 5;">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                                 <children>
+                                    <MaterialDesignIconView fill="WHITE" glyphName="FILE_WORD_BOX" layoutX="14.0" layoutY="58.0" size="50" />
+                                    <Label layoutX="12.0" layoutY="75.0" text="Project Summary.docx" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Pane>
+                              <Pane prefHeight="94.0" prefWidth="180.0" style="-fx-background-color: #2f6749; -fx-background-radius: 5 40 5 5; -fx-border-radius: 5 40 5 5;">
+                                 <children>
+                                    <MaterialDesignIconView fill="WHITE" glyphName="FILE_EXCEL_BOX" layoutX="14.0" layoutY="58.0" size="50" />
+                                    <Label layoutX="12.0" layoutY="75.0" prefHeight="21.0" prefWidth="144.0" text="Project Summary.xlsx" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Pane>
+                              <Pane prefHeight="94.0" prefWidth="180.0" style="-fx-background-color: #ba4b31; -fx-background-radius: 5 40 5 5; -fx-border-radius: 5 40 5 5;">
+                                 <children>
+                                    <MaterialDesignIconView fill="WHITE" glyphName="FILE_POWERPOINT_BOX" layoutX="14.0" layoutY="58.0" size="50" />
+                                    <Label layoutX="12.0" layoutY="75.0" text="Project Summary.ppt" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Pane>
+                              <Pane prefHeight="94.0" prefWidth="180.0" style="-fx-background-color: #e70000; -fx-background-radius: 5 40 5 5; -fx-border-radius: 5 40 5 5;">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                                 <children>
+                                    <MaterialDesignIconView fill="WHITE" glyphName="FILE_PDF_BOX" layoutX="14.0" layoutY="58.0" size="50" />
+                                    <Label layoutX="12.0" layoutY="75.0" text="Project Summary.pdf" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </children></Pane>
+               </top>
+               <center>
+                  <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="ALL FILES" textFill="#8d8d8d">
+                           <font>
+                              <Font name="Segoe UI Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="14.0" layoutY="50.0" prefHeight="270.0" prefWidth="725.0">
+                           <children>
+                              <ScrollPane prefHeight="270.0" prefWidth="725.0">
+                                 <content>
+                                    <VBox fx:id="vbFiles" prefHeight="274.0" prefWidth="709.0" />
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                     </children></Pane>
+               </center>
+            </BorderPane>
+         </center>
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="540.0" prefWidth="250.0" spacing="10.0" style="-fx-background-color: #1E61CD; -fx-background-radius: 0 60 0 0;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="85.0" prefWidth="250.0">
+                     <children>
+                        <JFXButton alignment="CENTER" buttonType="RAISED" graphicTextGap="10.0" layoutX="25.0" layoutY="23.0" onMouseClicked="#uploadFile" prefHeight="40.0" prefWidth="200.0" ripplerFill="#1e61cd" style="-fx-background-color: white; -fx-background-radius: 2em; -fx-border-radius: 2em;" text="Upload New File" textFill="#1e61cd">
+                           <graphic>
+                              <MaterialDesignIconView fill="#1e61cd" glyphName="FOLDER_PLUS" size="20" />
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children></Pane>
+                  <JFXButton alignment="TOP_LEFT" graphicTextGap="20.0" prefHeight="40.0" prefWidth="200.0" text="My Drive" textFill="WHITE">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="FOLDER_MULTIPLE" size="20" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" graphicTextGap="20.0" prefHeight="40.0" prefWidth="200.0" text="Computers" textFill="WHITE">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="LAPTOP" size="20" />
+                     </graphic>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" graphicTextGap="20.0" prefHeight="40.0" prefWidth="200.0" text="Shared with Me" textFill="WHITE">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_MULTIPLE" size="20" />
+                     </graphic>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" graphicTextGap="20.0" prefHeight="40.0" prefWidth="200.0" text="Recent" textFill="WHITE">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="INFORMATION_OUTLINE" size="20" />
+                     </graphic>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" graphicTextGap="20.0" prefHeight="40.0" prefWidth="200.0" text="Starred" textFill="WHITE">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="STAR" size="20" />
+                     </graphic>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" graphicTextGap="20.0" prefHeight="40.0" prefWidth="200.0" text="Trash" textFill="WHITE">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="DELETE" size="20" />
+                     </graphic>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" graphicTextGap="20.0" prefHeight="40.0" prefWidth="200.0" text="Backups" textFill="WHITE">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="BACKUP_RESTORE" size="20" />
+                     </graphic>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <Separator opacity="0.3" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Separator>
+                  <Pane prefHeight="95.0" prefWidth="250.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Storage Details" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <JFXProgressBar layoutX="14.0" layoutY="50.0" prefHeight="7.0" progress="0.55" />
+                        <Label layoutX="107.0" layoutY="75.0" text="1.74GB of 2GB Used" textFill="WHITE" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="1000.0" spacing="15.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="70.0" prefWidth="20.0" />
+                  <ImageView fitHeight="53.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_google_drive_96px_1.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Google Drive">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#4caf50" />
+                              <Stop color="#ffc107" offset="0.3677370936524864" />
+                              <Stop color="#1976d2" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <TextField prefHeight="30.0" prefWidth="290.0" promptText="Search in Drive" styleClass="text-input" stylesheets="@../styles/fullpackstyling.css">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <MaterialDesignIconView fill="#b4b0bd" glyphName="ACCOUNT_CIRCLE" size="30">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </MaterialDesignIconView>
+                  <Label fx:id="lblEmail" prefHeight="17.0" prefWidth="153.0" text="somebody@gmail.com" textFill="#b4b0bd">
+                     <tooltip>
+                        <Tooltip text="Email Account" />
+                     </tooltip>
+                  </Label>
+                  <OctIconView fill="#b4b0bd" glyphName="DASH" onMouseClicked="#hideWindow" size="25" HBox.hgrow="NEVER">
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </OctIconView>
+                  <MaterialDesignIconView fill="#b4b0bd" glyphName="CLOSE" onMouseClicked="#closeWindow" size="25">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MaterialDesignIconView>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

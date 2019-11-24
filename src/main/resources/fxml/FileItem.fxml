@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imThumbnail" fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lblName" layoutX="74.0" layoutY="24.0" text="Examen de Tercer Seguimiento.pdf" textFill="#8a8a8a">
+         <font>
+            <Font name="Decker" size="17.0" />
+         </font>
+      </Label>
+      <MaterialDesignIconView fill="#8a8a8a" glyphName="CLOUD_DOWNLOAD" layoutX="600.0" layoutY="44.0" onMouseClicked="#downloadFile" size="25">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MaterialDesignIconView>
+      <MaterialDesignIconView fill="#8a8a8a" glyphName="DOTS_HORIZONTAL" layoutX="636.0" layoutY="46.0" size="30">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MaterialDesignIconView>
+   </children>
+</Pane>
