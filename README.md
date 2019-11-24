@@ -8,10 +8,10 @@ for a QuickStart in Google's API Introduction Page [here](https://developers.goo
 
 The project currently supports the following operations:
 
-- List the files currently hosted in your Google Drive Account
+- Shows the files currently hosted in your Google Drive Account
 - Upload and Download Files
 
-Keep in mind that, for the app to upload and download files, the user must give you consent for such operations. Your app must be verified by Google when creating your project.
+The user must give the app consent to do such operations.
 
 ## Future Improvements
 - Optimize the process when uploading a file. (Checking the MIME type)
